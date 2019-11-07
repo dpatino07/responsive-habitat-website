@@ -1,0 +1,274 @@
+
+
+
+/* STYLE SHEET FOR INDEX.HTM */
+
+
+article 	
+{	
+display: block;
+padding:10px;
+}
+
+body 
+{
+font-family:Arial, Helvetica, sans-serif;
+font-size: 100%;
+border: none;
+}
+
+footer 
+{
+font-size:80%;
+text-align:center;
+clear:both;
+border: solid 5px #d8d8d8;
+margin-top:0;
+padding:0;
+background: linear-gradient(to right, rgb(255 255 255), rgb(202 233 245));
+}
+
+footer a 
+{
+text-decoration: none;
+}
+
+h1
+{
+text-shadow: 3px 3px 3px #888888;
+margin-top: 5px; 
+margin-bottom: 0px; 
+}
+
+header 
+{
+border: solid 5px #d8d8d8;
+background: linear-gradient(to right, rgb(255 255 255), rgb(202 233 245));
+}
+
+header img
+{
+height: 100%;
+padding: 0;
+margin: 0;
+}
+
+nav 
+{
+background:#d8d8d8; 
+font-weight:bold;
+float:left;
+height:420px;
+padding-right:10px;
+margin-right:10px;
+opacity:0.9;
+}
+
+section
+{
+background:url(globe.png);
+background-repeat:no-repeat;
+background-size:contain;
+}
+
+.floatright 
+{
+float:right;
+clear:right;
+margin:10px;
+}
+
+.navlinks
+{
+display:block;
+border:2px solid #444;
+margin: 5px;
+padding:2px 5px; 
+background:#3263ac;
+border-radius:5px;
+text-decoration:none;
+box-shadow:5px 5px 5px #888888;
+color: #fff;
+}
+
+.searchbox 
+{
+text-align:right;
+}
+
+#drop-menu 
+{
+width: 200px;
+cursor: pointer;
+display:block;
+border:2px solid #444;
+padding:5px;
+height: 20px;  
+max-height: 20px; 
+background:#3263ac;
+border-radius:5px;
+box-shadow:5px 5px 5px #888888;
+font-size:85%;
+color:#fff;
+text-align: center;
+}
+	
+#drop-menu:hover
+{
+border: 3px solid #bababa;
+}
+
+#drop-menu:hover .sub-menu 
+{
+display: inline-block;
+}
+
+
+#img-rotate
+{
+z-index:-1;
+transform:rotate(345deg);
+-ms-transform:rotate(345deg); /* IE9 */
+-webkit-transform:rotate(345deg); /* Chrome and Safari */
+}
+
+#logo-rotate
+{
+transform: rotateY(180deg);
+-webkit-transform: rotateY(180deg); /* Safari and Chrome */
+} 
+
+#video-rotate
+{
+transform:rotate(15deg);
+-ms-transform:rotate(15deg); /* IE9 */
+-webkit-transform:rotate(15deg); /* Chrome and Safari */
+}
+	
+.sub-menu 
+{
+display: none;
+width: 175px;
+padding: 5px 5px;
+border-radius:5px;
+box-shadow:5px 5px 5px #888888;
+-webkit-box-shadow: 5px 5px 5px rgba(0,0,0, 0.2);
+-moz-box-shadow: 5px 5px 5px rgba(0,0,0, 0.2);
+box-shadow: 5px 5px 5px rgba(0,0,0, 0.2);
+}
+	
+.sub-menu li
+{
+list-style-type: none;
+display: block;
+border:1px solid #444;
+margin: 2px;
+padding:3px 5px; 
+background:#888888;
+border-radius:5px;
+}
+
+.sub-menu li a
+{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+}
+	
+.sub-menu li
+{
+border: 3px solid #bababa;
+}
+
+.sub-menu .fa-google:hover 
+{
+color:rgb(219, 50, 54);
+}
+
+.sub-menu .fa-yahoo:hover
+{
+color: rgb(114, 14, 158);
+}
+    
+
+/* mobile */
+@media screen and (max-width: 500px) {
+    nav {
+        display: none;
+    }
+    #img-rotate {
+        display: none;
+    }
+    #video-rotate {
+        z-index:1;
+        transform:rotate(0);
+        -ms-transform:rotate(0deg); /* IE9 */
+        -webkit-transform:rotate(0deg); /* Chrome and Safari */
+    }
+    section article {
+        display: flex;
+        flex-flow: column wrap;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    #drop-menu {
+        width: 20px;
+        height: auto;
+    }
+
+    .search-box {
+        display: none;
+    }
+    
+    .search-icon {
+        display: block;
+    }
+
+}
+
+/* tablets and small laptops*/
+@media screen and (max-width: 768px) {
+    nav {
+        display: none;
+    }
+    #img-rotate {
+        display: none;
+    }
+    #video-rotate {
+        z-index:1;
+        transform:rotate(0);
+        -ms-transform:rotate(0deg); /* IE9 */
+        -webkit-transform:rotate(0deg); /* Chrome and Safari */
+    }
+    section article {
+        display: flex;
+        flex-flow: column wrap;
+        text-align: center;
+        justify-content: center;
+    }
+
+    #drop-menu {
+        width: 20px;
+        height: auto;
+    }
+
+    .search-box {
+        display: none;
+    }
+    
+    .search-icon {
+        display: block;
+    }
+
+}
+
+/* desktops and laptops*/
+@media screen and (min-width: 769px) and (max-width: 1170px) {
+
+}
+
+/* widescreens*/
+@media screen and (min-width: 1171px) {
+
+}
